@@ -5,10 +5,10 @@
   tasks:
     - name: add VLAN
       nxos_vlan:
-        vlan_id: 60
+        vlan_id: 59 
         host: "{{ inventory_hostname }}"
         admin_state: up
-        name: WEBGROUP
+        name: HYUNGSOK_VLAN_59 
         transport: nxapi
         username: cisco
         password: cisco
