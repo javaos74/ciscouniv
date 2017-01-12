@@ -1,0 +1,14 @@
+---
+- name: sample playbook
+  hosts: nxapi
+  connection: local
+  tasks:
+    - name: add VLAN
+      nxos_vlan:
+        vlan_id: 60
+        host: "{{ inventory_hostname }}"
+        admin_state: up
+        name: WEBGROUP
+        transport: nxapi
+        username: cisco
+        password: cisco

@@ -1,0 +1,10 @@
+[all:vars]
+ansible_connection=local
+[portal]
+10.72.86.252
+
+[nxapi]
+172.16.1.90
+172.16.1.91
+172.16.1.92
+172.16.1.93
